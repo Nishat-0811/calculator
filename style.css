@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+.mainbody{
+    height:400px;
+    background-color: darkcyan;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+    border:5px solid rgb(58, 53, 53);
+    border-radius: 10px;
+}
+.mainbody .monitor{
+    height: 130px;
+    width:100%;
+    background-color: darkgreen;
+    position: relative;
+    border-radius: 5px;
+}
+.mainbody .monitor .abc{
+    height: 25px;
+    width: 80px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 8PX;
+    background-color: rgb(32, 31, 32);
+    position: relative;
+}
+.mainbody .monitor::before{
+    content: "Calculate";
+    height:25px;
+    position: absolute;
+    margin-top: 8PX;
+    margin-left: 5px;
+}
+
+
+.mainbody .monitor input{
+    margin-top: 15px;
+
+    height: 79px;
+    width: 100%;
+    text-align: end;
+    letter-spacing: 3px;
+
+}
+.button-body{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding:10px;
+    margin-top: 15px;
+  
+    /* border-bottom-left-radius: 5px solid red; */
+   
+}
+.button-body > div{
+    border: 1px solid black;
+    margin:1px;
+    height: 40px;
+   
+}
+.button-body .one input{
+  
+    height: 100%;
+    width: 100%;
+    /* padding:10px; */
+    background-color: black;
+    color: blanchedalmond;
+}
+.button-body .operator input{
+    background-color: rgb(51, 18, 139);
+}
+.button-body .special input{
+    background-color: rgb(175, 76, 18)
+}
+.button-body .one input:hover{
+    background-color: rgb(71, 68, 68);
+    font-size: larger;
+    color: cornflowerblue;
+}
+.button-body .operator input:hover{
+    background-color: rgb(88, 10, 243);
+    font-size: larger;
+    color: rgb(235, 237, 241);
+}
+
+/* .button-body .hov{
+    margin: 20px;
+    display: inline-block;
+} */
